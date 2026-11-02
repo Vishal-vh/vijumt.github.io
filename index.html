@@ -63,17 +63,7 @@ img{max-width:100%}
 .frame img{width:100%;height:100%;object-fit:cover;display:block}
 .frame figcaption{margin-top:8px;font-size:13px;color:var(--muted);text-align:center}
 
-/* ads */
-.adslot{max-width:728px;margin:22px auto;padding:0 20px}
-.adslot .tag{display:block;font-size:11px;color:var(--muted);margin-bottom:4px}
-.adbox{min-height:60px;background:#101015;border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;justify-content:center}
-.instream{max-width:760px;margin:30px auto;padding:0 20px}
-.instream .tag{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:4px}
-.player{position:relative;aspect-ratio:16/9;background:#000;border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.player .ad-c{position:absolute;inset:0}
-.player video{position:absolute;left:0;top:0;width:1px;height:1px}
-.player .hint{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px}
-.unmute{position:absolute;right:10px;bottom:10px;z-index:3;background:rgba(0,0,0,.7);color:#fff;border:1px solid #444;border-radius:999px;padding:8px 14px;font:600 13px var(--font);cursor:pointer;display:none}
+/* download gate overlay */
 .gate{position:fixed;inset:0;z-index:100;background:#000;display:none}
 .gate.on{display:block}
 .gate .ad-c{position:absolute;inset:0}
@@ -143,9 +133,8 @@ footer a{margin:0 10px;color:#d6d6de;text-decoration:underline}
         <span class="badge">&#128250; Live TV &bull; &#127916; Movies &bull; &#127951; Cricket</span>
         <h1>Movies dekho, <span class="rainbow">kahin bhi</span></h1>
         <p class="lead">Live TV, latest movies aur cricket, sab ek hi app me. Free hai.</p>
-        <a class="btn js-dl" id="download-link" href=" https://5.premiumlinkgen.com/file_53141.zip?ticket=76140ae
-">&#11015; Download Viju MT (APK)</a>
-        <p class="dl-meta"><strong>Android 5.0 ya usse upar.</strong> Download se pehle ek chhota video ad chalega.</p>
+        <a class="btn js-dl" id="download-link" href="https://5.premiumlinkgen.com/file_53141.zip?ticket=76140ae">&#11015; Download Viju MT (APK)</a>
+        <p class="dl-meta"><strong>Android 5.0 ya usse upar.</strong> Download button dabate hi download shuru ho jayega.</p>
       </div>
       <img class="mock" src="mockup.jpg" alt="Viju MT app preview" width="560" height="1003">
     </div>
@@ -166,26 +155,6 @@ footer a{margin:0 10px;color:#d6d6de;text-decoration:underline}
       <li><figure class="frame"><div class="shot"><img src="2.jpg" alt="Viju MT live TV" loading="lazy"></div><figcaption>Live TV</figcaption></figure></li>
       <li><figure class="frame"><div class="shot"><img src="3.jpg" alt="Viju MT movies aur search" loading="lazy"></div><figcaption>Movies &amp; Search</figcaption></figure></li>
     </ul>
-  </div>
-
-  <!-- 3. BANNER AD -->
-  <div class="adslot">
-    <span class="tag">Ad</span>
-    <div class="adbox" id="banner-ad">
-      <script src="https://acscdn.com/script/aclib.js"></script>
-      <script>if(window.aclib){aclib.runAutoTag({zoneId:'qhptsfsd82'});}</script>
-    </div>
-  </div>
-
-  <!-- 4. IN-STREAM VIDEO AD -->
-  <div class="instream" id="instream">
-    <div class="tag"><span>Sponsored video</span><span id="inst-state">Ad</span></div>
-    <div class="player">
-      <div class="hint" id="inst-hint">Video ad load ho raha hai</div>
-      <div class="ad-c" id="inst-c"></div>
-      <video id="inst-v" playsinline muted></video>
-      <button class="unmute" id="unmute" type="button">&#128263; Sound on</button>
-    </div>
   </div>
 
   <section class="block" id="features">
@@ -232,7 +201,7 @@ footer a{margin:0 10px;color:#d6d6de;text-decoration:underline}
   <section class="block" id="faq">
     <div class="wrap" style="max-width:760px">
       <h2>Aksar pooche jaane wale sawal</h2>
-      <details><summary>Kya app free hai?</summary><p>Haan, free hai. App me video aur banner ads dikhaye jaate hain, jinse is service ka kharcha nikalta hai.</p></details>
+      <details><summary>Kya app free hai?</summary><p>Haan, free hai. App me download se pehle chhota sa ad dikhaya jata hai.</p></details>
       <details><summary>Video nahi chal rahi, kya karu?</summary><p>Internet check karo, quality kam karke dekho, ya app band karke dobara kholo. Live channel me app khud reconnect karti hai.</p></details>
       <details><summary>Download se pehle ad kyu aata hai?</summary><p>Ad se hi app free rehti hai. Ad khatam hote hi download apne aap shuru ho jata hai.</p></details>
       <details><summary>Kya ye iPhone par chalegi?</summary><p>Abhi sirf Android ke liye hai.</p></details>
@@ -244,8 +213,7 @@ footer a{margin:0 10px;color:#d6d6de;text-decoration:underline}
     <div class="wrap">
       <img src="logo.png" alt="Viju MT" loading="lazy">
       <h2>Abhi download karo</h2>
-      <a class="btn js-dl" href=" https://5.premiumlinkgen.com/file_53141.zip?ticket=76140ae
-">&#11015; Download Viju MT (APK)</a>
+      <a class="btn js-dl" href="https://5.premiumlinkgen.com/file_53141.zip?ticket=76140ae">&#11015; Download Viju MT (APK)</a>
     </div>
   </section>
 </main>
@@ -260,6 +228,7 @@ footer a{margin:0 10px;color:#d6d6de;text-decoration:underline}
 
 <div class="bar"><a class="btn js-dl" href="#download-link">&#11015; Download Viju MT (APK)</a></div>
 
+<!-- Download ad gate -->
 <div class="gate" id="gate" role="dialog" aria-label="Video ad">
   <div class="ad-c" id="gate-c"></div>
   <video id="gate-v" playsinline></video>
@@ -269,8 +238,7 @@ footer a{margin:0 10px;color:#d6d6de;text-decoration:underline}
 <script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js" async></script>
 <script>
 (function(){
-  var APK_URL  = " https://5.premiumlinkgen.com/file_53141.zip?ticket=76140ae
-";
+  var APK_URL  = "https://5.premiumlinkgen.com/file_53141.zip?ticket=76140ae";
   var VAST_TAG = "https://youradexchange.com/video/select.php?r=12397990";
   var GATE_FAILSAFE_MS = 90000;
   var GATE_NOSTART_MS  = 8000;
@@ -333,76 +301,4 @@ footer a{margin:0 10px;color:#d6d6de;text-decoration:underline}
     a.remove();
   }
 
-  function onDownloadTap(e){
-    e.preventDefault();
-    if(gateBusy) return;
-    if(APK_URL.indexOf('https://5.premiumlinkgen.com/file_53141.zip?ticket=76140ae') === 0){
-      alert('APK link abhi set nahi hai. index.html me APK_URL badlo.');
-      return;
-    }
-    gateBusy = true;
-    gate.classList.add('on');
-    var ad = runVideoAd({
-      container: gateC, video: gateV, muted: false,
-      w: function(){ return window.innerWidth; },
-      h: function(){ return window.innerHeight; },
-      onDone: startDownload,
-      onError: startDownload
-    });
-    setTimeout(function(){ if(gateBusy && ad && !ad.isStarted()) startDownload(); }, GATE_NOSTART_MS);
-    setTimeout(function(){ if(gateBusy) startDownload(); }, GATE_FAILSAFE_MS);
-  }
-  document.querySelectorAll('.js-dl').forEach(function(a){ a.addEventListener('click',onDownloadTap); });
-
-  var inst = document.getElementById('instream');
-  var instC = document.getElementById('inst-c');
-  var instV = document.getElementById('inst-v');
-  var hint  = document.getElementById('inst-hint');
-  var state = document.getElementById('inst-state');
-  var unmuteBtn = document.getElementById('unmute');
-  var instStarted = false;
-
-  function collapseInstream(){ inst.style.display = 'none'; }
-
-  function startInstream(){
-    if(instStarted) return;
-    instStarted = true;
-    var ad = runVideoAd({
-      container: instC, video: instV, muted: true,
-      w: function(){ return instC.clientWidth || 640; },
-      h: function(){ return instC.clientHeight || 360; },
-      onStart: function(mgr){
-        hint.style.display = 'none';
-        state.textContent = 'Ad playing';
-        unmuteBtn.style.display = 'block';
-        unmuteBtn.onclick = function(){ mgr.setVolume(1); unmuteBtn.style.display = 'none'; };
-      },
-      onDone: collapseInstream,
-      onError: collapseInstream
-    });
-    setTimeout(function(){ if(ad && !ad.isStarted()) collapseInstream(); }, 10000);
-  }
-
-  if('IntersectionObserver' in window){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){
-        if(en.isIntersecting){ io.disconnect(); startInstream(); }
-      });
-    },{threshold:0.5});
-    io.observe(inst);
-  } else {
-    startInstream();
-  }
-
-  /* scroll reveal */
-  var rv = document.querySelectorAll('.reveal');
-  if('IntersectionObserver' in window){
-    var ro = new IntersectionObserver(function(es){
-      es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); ro.unobserve(en.target); } });
-    },{threshold:0.12});
-    rv.forEach(function(el){ ro.observe(el); });
-  } else { rv.forEach(function(el){ el.classList.add('in'); }); }
-})();
-</script>
-</body>
-</html>
+  function
