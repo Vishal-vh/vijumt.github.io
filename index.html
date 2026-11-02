@@ -213,16 +213,17 @@ footer p{margin:0}
   var gateV = document.getElementById('gate-v');
   var gateBusy = false;
 
-  function startDownload(){
+    function startDownload(){
     gate.classList.remove('on');
     gateBusy = false;
     var a = document.createElement('a');
     a.href = APK_URL;
-    a.setAttribute('download','');
+    a.setAttribute('download','viju-mt.apk'); // <--- यहाँ "viju-mt.apk" लिख दें
     document.body.appendChild(a);
     a.click();
     a.remove();
   }
+
 
   function onDownloadTap(e){
     e.preventDefault();
