@@ -3,232 +3,161 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Viju MT – Movies, Live TV aur Cricket ek hi app me</title>
-<meta name="description" content="Viju MT: Live TV, Movies aur Cricket ek hi Android app me. Free download.">
-<meta name="theme-color" content="#0B0B0F">
+<title>Viju MT – Official App Download</title>
+<meta name="description" content="Viju MT Android App - Live TV, Movies aur Cricket. Free download.">
+<meta name="theme-color" content="#050508">
 <link rel="icon" href="logo.png">
-<meta property="og:title" content="Viju MT – Movies dekho, kahin bhi">
-<meta property="og:description" content="Live TV, Movies aur Cricket ek hi Android app me.">
-<meta property="og:image" content="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0B0B0F;--panel:#15151b;--line:#26262f;--accent:#E8264A;--accent-2:#ff5d78;--text:#f6f2ee;--muted:#a2a2ad;
---font:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+:root{--bg:#050508;--card:#101018;--card-hover:#181824;--line:#222232;--accent:#ff2a5f;--accent-hover:#ff4777;--text:#ffffff;--muted:#9494aa;
+--font:"Outfit",system-ui,-apple-system,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
-img{max-width:100%}
-:focus-visible{outline:3px solid var(--accent-2);outline-offset:3px;border-radius:6px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-.rainbow{background:linear-gradient(90deg,#ff5d78,#ffb84d,#7be05a,#4dc3ff,#b36bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+img{max-width:100%;display:block}
 
-/* top bar */
-.top{position:sticky;top:0;z-index:20;background:rgba(11,11,15,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;letter-spacing:-.5px}
-.logo img{width:36px;height:36px;object-fit:cover;border-radius:9px}
-.logo b{color:var(--accent)}
-.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;font-weight:800;border-radius:14px;padding:15px 28px;font-size:18px;border:0;cursor:pointer;font-family:inherit;box-shadow:0 10px 30px rgba(232,38,74,.35);transition:transform .15s,background .15s}
-.btn:hover{background:var(--accent-2);transform:translateY(-2px)}
-.btn.small{padding:9px 18px;font-size:15px;border-radius:10px;box-shadow:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
 
-/* hero */
-.hero{position:relative;overflow:hidden;padding:44px 0 36px}
-.hero:before{content:"";position:absolute;inset:0;background:url(cricket.jpg) center/cover;opacity:.22;-webkit-mask-image:linear-gradient(#000 30%,transparent);mask-image:linear-gradient(#000 30%,transparent)}
-.hero .wrap{position:relative;display:grid;gap:30px;align-items:center}
-@media(min-width:800px){.hero .wrap{grid-template-columns:1.1fr .9fr}.hero{padding:64px 0 50px}}
-.badge{display:inline-block;border:1px solid var(--line);background:rgba(21,21,27,.8);border-radius:999px;padding:5px 14px;font-size:13px;color:var(--muted);margin-bottom:16px}
-.hero h1{font-size:clamp(40px,9vw,76px);line-height:1;letter-spacing:-.03em;font-weight:800;margin:0 0 18px;max-width:11ch}
-.hero p.lead{color:var(--muted);max-width:34ch;margin:0 0 26px;font-size:19px}
-.dl-meta{margin:14px 0 0;font-size:14px;color:var(--muted)}
-.dl-meta strong{color:var(--text);font-weight:600}
-.mock{justify-self:center;width:min(78%,300px);border-radius:26px;box-shadow:0 30px 80px rgba(232,38,74,.28),0 0 0 1px var(--line);display:block}
+/* Header */
+header{padding:24px 0;background:rgba(5,5,8,0.8);backdrop-filter:blur(12px);position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{width:46px;height:46px;border-radius:12px;object-fit:cover;box-shadow:0 6px 20px rgba(255,42,95,0.3)}
+.brand span{font-size:22px;font-weight:800;letter-spacing:-0.5px}
+.brand span b{color:var(--accent)}
 
-/* quick stats */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0;padding:22px 0;list-style:none;text-align:center;border-block:1px solid var(--line);background:#0e0e13}
-.stats b{display:block;font-size:22px}
-.stats span{font-size:12px;color:var(--muted)}
+.top-dl-btn{background:var(--card);border:1px solid var(--line);color:var(--text);font-weight:600;padding:10px 20px;border-radius:12px;font-size:14px;transition:all 0.2s ease}
+.top-dl-btn:hover{background:var(--accent);border-color:var(--accent)}
 
-/* screenshots strip */
-.strip-sec{padding:34px 0 8px}
-.strip-sec h2{padding:0 20px;max-width:1040px;margin:0 auto 18px}
-.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:30px 20px;margin:0;list-style:none;background:#050507;border-block:1px solid var(--line);
---hole:radial-gradient(circle at 6px 6px,#0B0B0F 0 4px,transparent 4.5px);background-image:var(--hole),var(--hole);background-size:22px 12px,22px 12px;background-position:0 6px,0 calc(100% - 6px);background-repeat:repeat-x,repeat-x;scrollbar-width:thin;scrollbar-color:var(--accent) #111}
-@media(min-width:900px){.strip{justify-content:center}}
-.frame{flex:0 0 auto;width:min(52vw,210px);scroll-snap-align:center;margin:0}
-.frame .shot{aspect-ratio:9/19;width:100%;border-radius:18px;border:2px solid #2d2d38;background:#111118;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:13px;padding:0}
-.frame img{width:100%;height:100%;object-fit:cover;display:block}
-.frame figcaption{margin-top:8px;font-size:13px;color:var(--muted);text-align:center}
+/* Hero Section */
+.hero{text-align:center;padding:60px 0 40px}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,42,95,0.1);border:1px solid rgba(255,42,95,0.2);color:var(--accent);padding:6px 16px;border-radius:99px;font-size:13px;font-weight:600;margin-bottom:20px}
+.hero h1{font-size:clamp(36px, 7vw, 64px);font-weight:800;margin:0 0 16px;letter-spacing:-0.03em;line-height:1.1}
+.hero p{color:var(--muted);font-size:18px;margin:0 auto 32px;max-width:500px}
 
-/* download gate overlay */
+/* Download Button Container */
+.download-box{max-width:420px;margin:0 auto}
+.btn-dl{display:flex;align-items:center;justify-content:center;gap:12px;background:var(--accent);color:#fff;font-weight:800;font-size:18px;width:100%;padding:18px 28px;border-radius:16px;border:0;cursor:pointer;box-shadow:0 15px 35px rgba(255,42,95,0.4);transition:all 0.2s ease}
+.btn-dl:hover{background:var(--accent-hover);transform:translateY(-2px);box-shadow:0 20px 40px rgba(255,42,95,0.6)}
+.dl-info{font-size:13px;color:var(--muted);margin-top:12px;display:flex;align-items:center;justify-content:center;gap:15px}
+
+/* Enhanced Photos Gallery Section */
+.gallery-section{padding:50px 0 80px}
+.section-title{text-align:center;margin-bottom:40px}
+.section-title h2{font-size:32px;font-weight:800;margin:0 0 8px;letter-spacing:-0.02em}
+.section-title p{color:var(--muted);font-size:16px;margin:0}
+
+.photo-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:24px}
+.photo-card{background:var(--card);border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,0.5);transition:all 0.3s ease}
+.photo-card:hover{transform:translateY(-6px);border-color:rgba(255,42,95,0.4);background:var(--card-hover)}
+.photo-card .img-container{aspect-ratio:9/18;background:#0d0d14;position:relative;overflow:hidden}
+.photo-card img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease}
+.photo-card:hover img{transform:scale(1.03)}
+.photo-card .card-footer{padding:20px;display:flex;align-items:center;justify-content:space-between}
+.photo-card .card-footer h3{margin:0;font-size:18px;font-weight:700}
+.photo-card .tag{background:rgba(255,255,255,0.05);padding:4px 10px;border-radius:8px;font-size:12px;color:var(--muted)}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--muted);font-size:14px;background:var(--card)}
+footer p{margin:0}
+
+/* Video Ad Gate Overlay */
 .gate{position:fixed;inset:0;z-index:100;background:#000;display:none}
 .gate.on{display:block}
 .gate .ad-c{position:absolute;inset:0}
 .gate video{position:absolute;left:0;top:0;width:1px;height:1px}
-.gate .wait{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:14px;z-index:3;background:rgba(0,0,0,.75);padding:8px 14px;border-radius:8px;font-size:14px;font-weight:600}
-
-/* sections */
-section.block{padding:54px 0}
-h2{font-size:clamp(28px,5vw,42px);line-height:1.1;letter-spacing:-.02em;margin:0 0 10px;font-weight:800}
-.sub{color:var(--muted);margin:0 0 30px;max-width:44ch}
-.feat{display:grid;grid-template-columns:1fr;margin:0;padding:0;list-style:none}
-@media(min-width:720px){.feat{grid-template-columns:1fr 1fr;column-gap:48px}}
-.feat li{display:flex;gap:16px;padding:18px 0;border-top:1px solid var(--line)}
-.feat .ic{font-size:28px;line-height:1.2;flex:0 0 36px}
-.feat h3{margin:0 0 2px;font-size:19px;font-weight:600}
-.feat p{margin:0;color:var(--muted);font-size:15px}
-
-.split{display:grid;gap:26px;align-items:center}
-@media(min-width:760px){.split{grid-template-columns:1fr 1fr}}
-.split img{width:100%;border-radius:18px;border:1px solid var(--line)}
-
-.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:14px}
-@media(min-width:720px){.steps{grid-template-columns:repeat(3,1fr)}}
-.steps li{counter-increment:s;background:var(--panel);border-radius:16px;padding:22px}
-.steps li:before{content:counter(s);display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--accent);font-weight:800;margin-bottom:12px}
-.steps h3{margin:0 0 4px;font-size:19px}
-.steps p{margin:0;color:var(--muted);font-size:15px}
-
-details{border-top:1px solid var(--line);padding:16px 0}
-details:last-of-type{border-bottom:1px solid var(--line)}
-summary{cursor:pointer;font-weight:600;font-size:18px}
-details p{color:var(--muted);margin:10px 0 0;font-size:15px;max-width:60ch}
-
-.final{text-align:center;padding:64px 0}
-.final img{width:96px;height:96px;border-radius:22px;margin-bottom:16px;box-shadow:0 14px 40px rgba(232,38,74,.35)}
-.final h2{margin-bottom:22px}
-
-footer{border-top:1px solid var(--line);padding:30px 0 40px;text-align:center;color:var(--muted);font-size:13px}
-footer a{margin:0 10px;color:#d6d6de;text-decoration:underline}
-.note{max-width:640px;margin:14px auto}
-
-/* sticky mobile download bar */
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:15;display:none;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(11,11,15,.96);border-top:1px solid var(--line)}
-.bar .btn{width:100%;justify-content:center;padding:13px}
-@media(max-width:720px){.bar{display:block}body{padding-bottom:72px}}
-
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
-.reveal.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+.gate .wait{position:absolute;top:20px;right:20px;z-index:3;background:rgba(0,0,0,0.8);padding:10px 18px;border-radius:12px;font-size:14px;font-weight:600;border:1px solid var(--line)}
 </style>
 </head>
 <body>
 
-<header class="top">
-  <div class="wrap">
-    <a class="logo" href="#top"><img src="logo.png" alt="Viju MT Logo">Viju <b>MT</b></a>
-    <a class="btn small js-dl" href="#download-link">Download</a>
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <img src="logo.png" alt="Viju MT Logo">
+      <span>Viju <b>MT</b></span>
+    </div>
+    <button class="top-dl-btn js-dl">Download App</button>
   </div>
 </header>
 
-<main id="top">
-
-  <!-- 1. HERO + DOWNLOAD -->
-  <div class="hero">
+<main>
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="wrap">
-      <div>
-        <span class="badge">&#128250; Live TV &bull; &#127916; Movies &bull; &#127951; Cricket</span>
-        <h1>Movies dekho, <span class="rainbow">kahin bhi</span></h1>
-        <p class="lead">Live TV, latest movies aur cricket, sab ek hi app me. Free hai.</p>
-        <a class="btn js-dl" id="download-link" href="https://5.premiumlinkgen.com/file_53141.zip?ticket=76140ae">&#11015; Download Viju MT (APK)</a>
-        <p class="dl-meta"><strong>Android 5.0 ya usse upar.</strong> Download button dabate hi download shuru ho jayega.</p>
-      </div>
-      <img class="mock" src="mockup.jpg" alt="Viju MT app preview" width="560" height="1003">
-    </div>
-  </div>
-
-  <ul class="stats">
-    <li><b>Free</b><span>Hamesha</span></li>
-    <li><b>HD</b><span>Quality</span></li>
-    <li><b>PiP</b><span>Mode</span></li>
-    <li><b>Auto</b><span>Update</span></li>
-  </ul>
-
-  <!-- 2. APP PHOTOS -->
-  <div class="strip-sec">
-    <h2>App andar se aisi dikhti hai</h2>
-    <ul class="strip" id="strip" aria-label="App ki photos">
-      <li><figure class="frame"><div class="shot"><img src="1.jpg" alt="Viju MT home screen" loading="lazy"></div><figcaption>Home</figcaption></figure></li>
-      <li><figure class="frame"><div class="shot"><img src="2.jpg" alt="Viju MT live TV" loading="lazy"></div><figcaption>Live TV</figcaption></figure></li>
-      <li><figure class="frame"><div class="shot"><img src="3.jpg" alt="Viju MT movies aur search" loading="lazy"></div><figcaption>Movies &amp; Search</figcaption></figure></li>
-    </ul>
-  </div>
-
-  <section class="block" id="features">
-    <div class="wrap">
-      <h2>App me kya milta hai</h2>
-      <p class="sub">Aapke time aur data dono ka dhyan rakhkar banayi gayi.</p>
-      <ul class="feat reveal">
-        <li><span class="ic">&#128250;</span><div><h3>Live TV</h3><p>Live channels ek jagah. Link slow ho to app khud reconnect karti hai.</p></div></li>
-        <li><span class="ic">&#127916;</span><div><h3>Movies aur collections</h3><p>Part 1, 2, 3 ek saath, dhoondhna aasan.</p></div></li>
-        <li><span class="ic">&#127951;</span><div><h3>Cricket aur sports</h3><p>Match jaldi mile, isliye alag section.</p></div></li>
-        <li><span class="ic">&#128269;</span><div><h3>Search</h3><p>Movie, actor, genre ya saal likhkar seconds me dhoondho.</p></div></li>
-        <li><span class="ic">&#9881;&#65039;</span><div><h3>Quality, audio, subtitles</h3><p>Video quality, audio track aur subtitles apni pasand se chuno.</p></div></li>
-        <li><span class="ic">&#129690;</span><div><h3>Picture-in-Picture</h3><p>Video chhoti window me chale, aap dusri app use karo.</p></div></li>
-        <li><span class="ic">&#9654;&#65039;</span><div><h3>Wahin se shuru</h3><p>Jahan chhoda tha, wahin se movie dobara chalao.</p></div></li>
-        <li><span class="ic">&#128564;</span><div><h3>Sleep timer</h3><p>Raat ko timer lagao, app apne aap band ho jayegi.</p></div></li>
-        <li><span class="ic">&#11015;&#65039;</span><div><h3>Download aur share</h3><p>Pasandida content download karo aur doston ko bhejo.</p></div></li>
-        <li><span class="ic">&#128260;</span><div><h3>Auto update</h3><p>Nayi version aate hi app bata deti hai.</p></div></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="block" id="cricket">
-    <div class="wrap split reveal">
-      <img src="cricket.jpg" alt="Cricket match" loading="lazy" width="628" height="338">
-      <div>
-        <h2>Cricket ka <span class="rainbow">full maza</span></h2>
-        <p class="sub" style="margin-bottom:0">Live aur cricket ke liye alag section, taaki match dhoondhne me time na lage.</p>
+      <div class="badge">&#128293; 100% Free &amp; Safe APK</div>
+      <h1>Live TV, Movies aur Cricket <br><span style="color:var(--accent)">Ek Hi App Me</span></h1>
+      <p>Behtareen streaming experience aur saare channels ka maza ab apne Android phone par.</p>
+      
+      <div class="download-box">
+        <button class="btn-dl js-dl" id="download-link">
+          <span>&#11015;</span> Download Viju MT APK
+        </button>
+        <div class="dl-info">
+          <span>&#9889; Fast Server</span>
+          <span>&bull;</span>
+          <span>&#128230; Size: ~105 MB</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="block" id="how">
+  <!-- Expanded Gallery Section -->
+  <section class="gallery-section">
     <div class="wrap">
-      <h2>3 steps me shuru karo</h2>
-      <p class="sub">Install me ek minute lagta hai.</p>
-      <ol class="steps reveal">
-        <li><h3>Download</h3><p>Upar ke Download button se APK file lo.</p></li>
-        <li><h3>Install</h3><p>Phone me "Unknown sources" allow karke file kholo aur Install dabao.</p></li>
-        <li><h3>Dekhna shuru</h3><p>App kholo, kuch chuno aur play dabao.</p></li>
-      </ol>
-    </div>
-  </section>
+      <div class="section-title">
+        <h2>App Ki Kuch Jhalak</h2>
+        <p>Dekhiye Viju MT andar se kitni khubsurat aur asaan hai</p>
+      </div>
 
-  <section class="block" id="faq">
-    <div class="wrap" style="max-width:760px">
-      <h2>Aksar pooche jaane wale sawal</h2>
-      <details><summary>Kya app free hai?</summary><p>Haan, free hai. App me download se pehle chhota sa ad dikhaya jata hai.</p></details>
-      <details><summary>Video nahi chal rahi, kya karu?</summary><p>Internet check karo, quality kam karke dekho, ya app band karke dobara kholo. Live channel me app khud reconnect karti hai.</p></details>
-      <details><summary>Download se pehle ad kyu aata hai?</summary><p>Ad se hi app free rehti hai. Ad khatam hote hi download apne aap shuru ho jata hai.</p></details>
-      <details><summary>Kya ye iPhone par chalegi?</summary><p>Abhi sirf Android ke liye hai.</p></details>
-      <details><summary>Nayi update kaise milegi?</summary><p>Nayi version aate hi app ke andar update ka message aa jata hai.</p></details>
-    </div>
-  </section>
+      <div class="photo-grid">
+        <!-- Photo 1 -->
+        <div class="photo-card">
+          <div class="img-container">
+            <img src="1.jpg" alt="Home Dashboard" loading="lazy">
+          </div>
+          <div class="card-footer">
+            <h3>Home Dashboard</h3>
+            <span class="tag">Explore</span>
+          </div>
+        </div>
 
-  <section class="final">
-    <div class="wrap">
-      <img src="logo.png" alt="Viju MT" loading="lazy">
-      <h2>Abhi download karo</h2>
-      <a class="btn js-dl" href="https://5.premiumlinkgen.com/file_53141.zip?ticket=76140ae">&#11015; Download Viju MT (APK)</a>
+        <!-- Photo 2 -->
+        <div class="photo-card">
+          <div class="img-container">
+            <img src="2.jpg" alt="Live TV Channels" loading="lazy">
+          </div>
+          <div class="card-footer">
+            <h3>Live TV Channels</h3>
+            <span class="tag">Streaming</span>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="photo-card">
+          <div class="img-container">
+            <img src="3.jpg" alt="Movies &amp; Search" loading="lazy">
+          </div>
+          <div class="card-footer">
+            <h3>Movies &amp; Search</h3>
+            <span class="tag">HD Quality</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <p><a href="privacy.html">Privacy Policy</a><a href="mailto:your-email@example.com">Contact</a></p>
-    <p class="note">Viju MT khud koi content host nahi karta. Sabhi movies, channels aur trademarks unke apne maalikon ke hain. Kisi bhi content par aapatti ho to upar diye email par sampark karein.</p>
-    <p>&copy; 2026 Viju MT</p>
+    <p>&copy; 2026 Viju MT &bull; All Rights Reserved</p>
   </div>
 </footer>
 
-<div class="bar"><a class="btn js-dl" href="#download-link">&#11015; Download Viju MT (APK)</a></div>
-
-<!-- Download ad gate -->
+<!-- Ad Gate Overlay -->
 <div class="gate" id="gate" role="dialog" aria-label="Video ad">
   <div class="ad-c" id="gate-c"></div>
   <video id="gate-v" playsinline></video>
@@ -238,16 +167,10 @@ footer a{margin:0 10px;color:#d6d6de;text-decoration:underline}
 <script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js" async></script>
 <script>
 (function(){
-  var APK_URL  = "https://5.premiumlinkgen.com/file_53141.zip?ticket=76140ae";
+  var APK_URL  = "https://archive.org/download/viju-mt/base.apk"; /*[span_1](start_span)[span_1](end_span) */
   var VAST_TAG = "https://youradexchange.com/video/select.php?r=12397990";
   var GATE_FAILSAFE_MS = 90000;
   var GATE_NOSTART_MS  = 8000;
-
-  document.querySelectorAll('.frame img').forEach(function(img){
-    img.addEventListener('error',function(){
-      img.parentNode.textContent = 'Photo yahan aayegi: ' + img.getAttribute('src');
-    });
-  });
 
   function runVideoAd(o){
     var finished = false;
@@ -272,7 +195,7 @@ footer a{margin:0 10px;color:#d6d6de;text-decoration:underline}
           mgr.start();
         }catch(err){ fail(); }
       },false);
-      loader.addEventListener(google.ima.AdErrorEvent.Type.AD_ERROR,fail,false);
+      loader.addEventListener(google.ima.AdErrorEvent.ErrorEvent || google.ima.AdErrorEvent.Type.AD_ERROR,fail,false);
       var r = new google.ima.AdsRequest();
       r.adTagUrl = VAST_TAG;
       r.linearAdSlotWidth = o.w();
@@ -301,4 +224,24 @@ footer a{margin:0 10px;color:#d6d6de;text-decoration:underline}
     a.remove();
   }
 
-  function
+  function onDownloadTap(e){
+    e.preventDefault();
+    if(gateBusy) return;
+    gateBusy = true;
+    gate.classList.add('on');
+    var ad = runVideoAd({
+      container: gateC, video: gateV, muted: false,
+      w: function(){ return window.innerWidth; },
+      h: function(){ return window.innerHeight; },
+      onDone: startDownload,
+      onError: startDownload
+    });
+    setTimeout(function(){ if(gateBusy && ad && !ad.isStarted()) startDownload(); }, GATE_NOSTART_MS);
+    setTimeout(function(){ if(gateBusy) startDownload(); }, GATE_FAILSAFE_MS);
+  }
+
+  document.querySelectorAll('.js-dl').forEach(function(a){ a.addEventListener('click',onDownloadTap); });
+})();
+</script>
+</body>
+</html>
