@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Viju MT – Movies dekho, kahin bhi</title>
+<meta name="description" content="Viju MT: Live TV, Movies, Sports aur Cricket ek hi Android app mein. HD quality, subtitles, Picture-in-Picture aur download support.">
+<meta name="theme-color" content="#0B0B0F">
+<style>
+:root{--bg:#0B0B0F;--card:#17171D;--accent:#E8264A;--muted:#9A9AA5;--text:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:10;background:rgba(11,11,15,.92);backdrop-filter:blur(8px);border-bottom:1px solid #22222b}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;font-size:20px}
+.logo span{color:var(--accent)}
+nav a{margin-left:18px;font-size:14px;color:var(--muted)}
+nav a:hover{color:#fff}
+.hero{text-align:center;padding:72px 0 56px;background:radial-gradient(ellipse at top,rgba(232,38,74,.28),transparent 60%)}
+.hero h1{font-size:clamp(32px,7vw,56px);line-height:1.15;margin:0 0 16px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{max-width:560px;margin:0 auto 28px;color:var(--muted);font-size:17px}
+.btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:14px 30px;border-radius:999px;font-size:16px;box-shadow:0 8px 24px rgba(232,38,74,.35)}
+.btn.ghost{background:transparent;border:1px solid #33333f;box-shadow:none;margin-left:10px}
+.badges{margin-top:26px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.badge{font-size:12px;color:var(--muted);border:1px solid #2a2a35;border-radius:999px;padding:5px 12px}
+section{padding:56px 0}
+h2{font-size:28px;margin:0 0 8px;text-align:center}
+.sub{text-align:center;color:var(--muted);margin:0 auto 32px;max-width:520px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid #22222b;border-radius:16px;padding:22px}
+.card .ic{font-size:30px;margin-bottom:10px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.tab{background:var(--card);border:1px solid #22222b;border-radius:12px;padding:10px 18px;font-size:13px;font-weight:700;letter-spacing:.5px}
+.tab b{color:var(--accent)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.step{background:var(--card);border-radius:16px;padding:22px;position:relative}
+.step:before{counter-increment:s;content:counter(s);position:absolute;top:-14px;left:20px;width:30px;height:30px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:800}
+.step h3{margin:8px 0 6px;font-size:17px}
+.step p{margin:0;color:var(--muted);font-size:14px}
+details{background:var(--card);border:1px solid #22222b;border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin:10px 0 0;font-size:14px}
+.note{font-size:12px;color:var(--muted);text-align:center;max-width:680px;margin:0 auto}
+footer{border-top:1px solid #22222b;padding:32px 0;text-align:center;color:var(--muted);font-size:13px}
+footer a{margin:0 10px;color:#cfcfd8}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Viju <span>MT</span></a>
+    <nav><a href="#features">Features</a><a href="#how">Kaise use karein</a><a href="#faq">FAQ</a></nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Movies dekho, <em>kahin bhi</em></h1>
+      <p>Live TV, latest Movies, Sports aur Cricket — sab kuch ek hi Android app mein. Smooth streaming, apni pasand ki quality, aur bilkul simple design.</p>
+      <a class="btn" href="#download">Download App</a>
+      <a class="btn ghost" href="#features">Features dekhein</a>
+      <div class="badges">
+        <span class="badge">📺 Live TV</span>
+        <span class="badge">🎬 Movies</span>
+        <span class="badge">🏏 Cricket &amp; Sports</span>
+        <span class="badge">⬇️ Download</span>
+        <span class="badge">🇮🇳 Hindi interface</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="features">
+    <div class="wrap">
+      <h2>App ki khaas baatein</h2>
+      <p class="sub">Aapke time aur data dono ka dhyan rakhkar banayi gayi app.</p>
+      <div class="grid">
+        <div class="card"><div class="ic">📺</div><h3>Live TV</h3><p>Live channels ek hi jagah. Link slow ho to app apne aap reconnect karne ki koshish karti hai.</p></div>
+        <div class="card"><div class="ic">🎬</div><h3>Movies &amp; Collections</h3><p>Movies ke parts (Part 1, 2, 3…) ek saath collection mein milte hain, dhoondhna aasan.</p></div>
+        <div class="card"><div class="ic">🏏</div><h3>Sports &amp; Cricket</h3><p>Cricket, IPL aur dusre sports ka alag section, taaki match jaldi mil jaye.</p></div>
+        <div class="card"><div class="ic">🔍</div><h3>Smart Search</h3><p>Movie, actor, genre ya saal likhkar seconds mein search karein.</p></div>
+        <div class="card"><div class="ic">⚙️</div><h3>Quality &amp; Tracks</h3><p>Video quality chunein, alag audio track aur subtitles select karein.</p></div>
+        <div class="card"><div class="ic">🪟</div><h3>Picture-in-Picture</h3><p>Video chhoti window mein chalti rahe aur aap dusri app use karte rahein.</p></div>
+        <div class="card"><div class="ic">▶️</div><h3>Wahin se shuru</h3><p>Pichli baar jahan chhoda tha, wahin se movie dobara chalayein.</p></div>
+        <div class="card"><div class="ic">😴</div><h3>Sleep Timer</h3><p>Raat ko movie dekhte hue timer lagayein, app apne aap band ho jayegi.</p></div>
+        <div class="card"><div class="ic">⬇️</div><h3>Download &amp; Share</h3><p>Pasandida content download karein aur doston ke saath share karein.</p></div>
+        <div class="card"><div class="ic">🔄</div><h3>Auto Update</h3><p>Nayi update aate hi app aapko bata deti hai.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>5 simple sections</h2>
+      <p class="sub">App kholte hi neeche ka menu sab kuch aasan bana deta hai.</p>
+      <div class="tabs">
+        <div class="tab"><b>HOME</b> · Trending</div>
+        <div class="tab"><b>LIVE</b> · Channels</div>
+        <div class="tab"><b>MOVIES</b> · Library</div>
+        <div class="tab"><b>SPORTS</b> · Cricket</div>
+        <div class="tab"><b>PROFILE</b> · Settings</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <h2>Kaise use karein</h2>
+      <p class="sub">Sirf 3 steps mein shuru karein.</p>
+      <div class="steps">
+        <div class="step"><h3>Download</h3><p>Neeche ke button se APK download karein.</p></div>
+        <div class="step"><h3>Install</h3><p>Phone ki settings mein "Unknown sources" allow karke install karein.</p></div>
+        <div class="step"><h3>Dekhna shuru</h3><p>App kholein, kuch chunein aur play dabayein.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" style="text-align:center">
+    <div class="wrap">
+      <h2>Abhi download karein</h2>
+      <p class="sub">Android 5.0 aur usse upar ke phones ke liye.</p>
+      <!-- NEECHE APNI APK KI LINK DAALEIN -->
+      <a class="btn" href="YOUR-APK-LINK-HERE">⬇️ Download Viju MT (APK)</a>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap" style="max-width:720px">
+      <h2>Aksar pooche jaane wale sawal</h2>
+      <p class="sub"></p>
+      <details><summary>Kya app free hai?</summary><p>Haan, app free hai. App mein ads dikhaye jaate hain, jinse is service ka kharcha nikalta hai.</p></details>
+      <details><summary>Video nahi chal rahi, kya karein?</summary><p>Internet check karein, Quality ko kam karke dekhein, ya app band karke dobara kholein. Live channel mein app khud reconnect karti hai.</p></details>
+      <details><summary>Kya ye iPhone par chalegi?</summary><p>Abhi sirf Android ke liye available hai.</p></details>
+      <details><summary>Nayi update kaise milegi?</summary><p>Nayi version aate hi app ke andar update ka message aa jata hai.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><a href="privacy.html">Privacy Policy</a><a href="mailto:your-email@example.com">Contact</a></p>
+    <p class="note">Viju MT khud koi content host nahi karta. Sabhi movies, channels aur trademarks unke apne maalikon ke hain. Kisi bhi content par aapatti ho to upar diye email par sampark karein.</p>
+    <p>© 2026 Viju MT</p>
+  </div>
+</footer>
+
+</body>
+</html>
